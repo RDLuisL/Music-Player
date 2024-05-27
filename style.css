@@ -38,6 +38,8 @@ body {
     justify-content: center;
 }
 
+/*ATENCION: style MARGIN dentro de la imagen de las letras*/
+
 .menu__wrapper {
     display: flex;
     position: fixed;
@@ -317,4 +319,18 @@ body {
         stroke: var(--gray-menu-button);
         width: 1.5rem;
     }
+}
+
+.logo-container img {
+    height: 2.5rem;
+    width: 2.5em;
+    /* stroke: var(--secondary-color);
+    stroke-width: 1.75; */
+    transition: 0.8s;
+}
+
+.logo-container:hover img {
+    stroke: var(--primary-color);
+    transform: rotateY(360deg);
+    stroke-width: 1.75;
 }
