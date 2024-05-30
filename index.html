@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="style.css">
-              <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-              <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
-              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluir jQuery -->
-  
-              <title>Language Selector</title>
-      </head>
-  
-    <body>
-            <div class="translate_wrapper">
-                
-                    <div class="current_lang">
-                        <div class="lang" data-value='es'>
-                              <img src="92356_spain_icon.png">
-                              <span class="lang-txt">
-                                Español
-                              </span>      
-                        </div>  
-                    </div>
-                  
-                    <div class="more_lang">
-                      
-                        <div class="lang selected" data-value='en'>
-                                <img src="92406_states_united_icon.png">
-                                <span class="lang-txt">
-                                        English
-                                </span>      
-                        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="note.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+</head>
+<body>
 
-                        <div class="lang" data-value='es'>
-                                <img src="92356_spain_icon.png">
-                                <span class="lang-txt">
-                                  Español
-                                </span>      
-                        </div> 
+    <div class="music-player-wrapper">
+        <h1>Luis Music Player</h1>
+      <div id="track-art">
+        <div class="track-info-container">
+          <p id="track-artist"></p>
+          <h1 id="track-name"></h1>
+        </div>
+      </div>
 
-                          <div class="lang" data-value='cn'>
-                                <img src="flag_china.png">
-                                <span class="lang-txt">简体中文</span>      
-                          </div>
+      <div class="track-elapsed-time-container">
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="current-time">00:00</div>
+        <div class="total-duration">00:00</div>
+      </div>
 
-                        <div class="lang" data-value='de'>
-                                <img src="flag_germany.png">
-                                <span class="lang-txt">Deutsch</span>      
-                        </div>
-                        
-                        <div class="lang" data-value='fr'>
-                                <img src="france.png">
-                                <span class="lang-txt">Français</span>      
-                        </div>
-                      
-                        <div class="lang" data-value="pt">
-                                <img src="flag_portugal.png">
-                                <span class="lang-txt">Português<span> (BR)</span></span>      
-                        </div> 
-                        
-                        <div class="lang" data-value="ar">
-                                <img src="flag_saudi.png">
-                                <span class="lang-txt">العربية <span> (SA)</span></span>      
-                        </div> 
-                    </div>
-                  
-                  </div>
+      <div class="music-controls-container">
+        <div class="controls">
+          <i class="fas fa-random" id="shuffle-track"></i>
+          <i class="fas fa-backward" id="previous-track"></i>
+          <div id="play_pause">
+            <i class="fas fa-play"></i>
+          </div>
+          <i class="fas fa-forward" id="next-track"></i>
+          <div class="track-volume-container">
+            <div class="volume-container vol" data-dropdown>
+              <button id="vol_btn"><i class="fas fa-ellipsis-v" data-dropdown-button></i></button>
+              <div class="dropdown-menu">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+              </div>
             </div>
-            
-            <div class="content">
-                    <div class="ct-img">
-                      <img src="https://movies-b26f.kxcdn.com/wp-content/uploads/2023/11/kingdom-planet-of-the-apes-4-110223-b1cc97c25dbd4f289c47bc83b9dcc441-770x470.jpg">
-                    </div>
-                    <div class="ct-txt">
-                      <h1></h1>
-                      <p></p>
-                      <a href="#"><span>Link</span></a>
-                    </div>
-            </div>
-            
-            <script src="app.js"></script>
-    </body>
-            
-      
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="script.js"></script>
+  
+</body>
 </html>
