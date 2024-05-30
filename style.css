@@ -2,33 +2,24 @@
     box-sizing: border-box;
 }
 
-
 body {
-    color: #222;
-  background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  transition: background-color .5s, color .5s;
-  margin: 0;
-  padding: 0;
+color: #222;
+background-color: #fff;
+font-family: 'Montserrat', sans-serif;
+transition: background-color .5s, color .5s;
+margin: 0;
+padding: 0;
 }
   
-
 .night-mode {
     background-color: #222;
-    color: darken(white, 15%);
-  }
+    color: white;
+}
     
-  
-  .night-mode .tumbler {
+.night-mode .tumbler {
         transform: translateX(calc(100% - 2px));
-    }
+}
       
-    
-    .night-mode .post {
-        border-bottom: 1px dashed darken(white, 15%);
-    }
-      
-
 .header {
     text-align: right;
   width: 80vw;
@@ -39,12 +30,6 @@ body {
   margin: auto;
 }
    
-  
-.header__title {
-    display: block;
-}
-  
-
 .tumbler-wrapper {
     margin-left: auto;
     width: 50px;
@@ -61,14 +46,11 @@ body {
     position: relative;
 }
   
-  
 .tumbler-wrapper svg {
     width: 15px;
     height: 15px;
   }
-   
 
-  
 .tumbler {
     position: absolute;
     height: 20px;
@@ -79,65 +61,9 @@ body {
     will-change: transform;
 }
   
-  
-.credits {
-    display: none;
-}
-  
-  
-.sun-svg, .moon-svg {
-    display: none;
-}
-  
-  
-.main {
+  .main {
     width: 80vw;
     max-width: 500px;
     padding: 0 1rem;
     margin: auto;
 }
-  
-
-.post {
-    border-bottom: 1px dashed #222;
-  margin-bottom: 1.5rem;
-  transition: border-bottom 0.5s;
-}
-  
-  
-.post__title {
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-  
-  
-  &:first-child {
-    margin-top: 0;
-  }
-   
-  
-.footer {
-    width: 80vw;
-    max-width: 500px;
-    padding: 1rem;
-    margin: 0 auto 1.5rem;
-}
- 
-  
-.description {
-    display: flex;
-}
-  
-    
-.description__text {
-    margin-right: 0.25rem;
-}
-  
-  
-.loveSvg svg {
-    display: block;
-    height: 1rem;
-    max-width: 1rem;
-}
-  
-  
