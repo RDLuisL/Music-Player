@@ -25,8 +25,8 @@ let track_list = [
         artist: "Circo Urbano",
         album_image_small_jpg: "circo_urbano_kilometros_cover.webp",
         album_image_small_webp: "circo_urbano_kilometros_cover.webp",
-        album_image_big_jpg: "circo_urbano_kilometros_cover.webp",
-        album_image_big_webp: "circo_urbano_kilometros_cover.webp",
+        album_image_big_jpg: "fondo_metal_lijado_remache.jpg",
+        album_image_big_webp: "fondo_metal_lijado_remache.jpg",
         path: "muerto-en-choroni_circo_urbano.mp3"
     },
     {
@@ -34,8 +34,8 @@ let track_list = [
         artist: "Cuarto Poder",
         album_image_small_jpg: "4to_poder_cover.jpg",
         album_image_small_webp: "4to_poder_cover.jpg",
-        album_image_big_jpg: "4to_poder_cover.jpg",
-        album_image_big_webp: "4to_poder_cover.jpg",
+        album_image_big_jpg: "metálico_estriado.jpg",
+        album_image_big_webp: "metálico_estriado.jpg",
         path: "arenita_playita_4to_poder.mp3"
     },
     {
@@ -43,27 +43,27 @@ let track_list = [
         artist: "Mulato",
         album_image_small_jpg: "mulato_cover.jpg",
         album_image_small_webp: "mulato_cover.jpg",
-        album_image_big_jpg: "mulato_cover.jpg",
-        album_image_big_webp: "bahia_de_cata.webp",
+        album_image_big_jpg: "black_honeycomb.jpg",
+        album_image_big_webp: "black_honeycomb.jpg",
         path: "jah_jah_go_mulato.mp3"
     },
     {
-        name: "HELLO",
-        artist: "Pop Smoke",
-        album_image_small_jpg: "pop_smoke-hello_500px.jpg",
-        album_image_small_webp: "pop_smoke-hello_500px.webp",
-        album_image_big_jpg: "pop_smoke-hello_1000px.jpg",
-        album_image_big_webp: "pop_smoke-hello_1000px.webp",
-        path: "Pop Smoke - Hello.mp3"
+        name: "La Casa",
+        artist: "Caramelos de Cianuro",
+        album_image_small_jpg: "caramelos_de_cianuro_album.png",
+        album_image_small_webp: "caramelos_de_cianuro_album.png",
+        album_image_big_jpg: "metal_lijado.jpg",
+        album_image_big_webp: "metal_lijado.jpg",
+        path: "la_casa_caramelos_de_cianuro.mp3"
     },
     {
-        name: "BOY BANDZ",
-        artist: "Post Malone",
-        album_image_small_jpg: "post_malone-boy_bands_500px.jpg",
-        album_image_small_webp: "post_malone-boy_bands_500px.webp",
-        album_image_big_jpg: "post_malone-boy_bands_1000px.jpg",
-        album_image_big_webp: "post_malone-boy_bands_1000px.webp",
-        path: "Post Malone - Boy Bandz.mp3"
+        name: "Uñas Asesinas",
+        artist: "Zapato 3",
+        album_image_small_jpg: "unas_asesinas_zapato_3.jpg",
+        album_image_small_webp: "unas_asesinas_zapato_3.jpg",
+        album_image_big_jpg: "rust_metal_rivets.jpg",
+        album_image_big_webp: "rust_metal_rivets.jpg",
+        path: "unas_asesinas_zapato_3.mp3"
     }
 ];
 
